@@ -20,24 +20,6 @@ def get_estimated_prices(location, sqft, bhk, bath):
         x[loc_index] = 1
     return round(__model.predict([x])[0],2)
 
-
-# def get_estimated_price(location, sqft, bhk, bath):
-#     try:
-#         loc_index = __data_columns.index(location.lower())
-#     except:
-#         loc_index = -1
-#
-#     x = np.zeros(len(__data_columns))
-#     x[0] = sqft
-#     x[1] = bath
-#     x[2] = bhk
-#     if loc_index >= 0:
-#         x[loc_index] = 1
-#     return round(__model.predict([x])[0],2)
-
-# def get_location_name():
-#     return __locations
-
 def load_saved_artifacts():
     print("loading saved artifacts...start")
     global __data_columns
@@ -53,7 +35,7 @@ def load_saved_artifacts():
             __model = pickle.load(f)
     print("loading saved artifacts...done")
 
-def get_location_names():
+def get_loc_names():
     return __locations
 
 def get_data_columns():
