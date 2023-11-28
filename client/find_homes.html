@@ -1,0 +1,209 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Property Estimation Form</title>
+  <link rel="stylesheet" href="find_homes.css">
+  <style>
+    form {
+      display: flex;
+      flex-direction: column;
+      width: 500px;
+      margin: 0 auto;
+      padding: 30px;
+      border: 3px solid rgb(89, 89, 202);
+    }
+
+    label {
+      display: block;
+      margin-bottom: 10px;
+    }
+
+    select,
+    input {
+      width: 100%;
+      padding: 10px;
+      border: 1.5px solid rgb(89, 89, 202);
+      border-radius: 5px;
+      margin-bottom: 2em;
+    }
+
+    button {
+      width: 100%;
+      padding: 10px;
+      margin-top: 1em;
+      border: none;
+      border-radius: 5px;
+      background-color:rgba(113, 45, 186, 0.875);
+      color: #fff;
+      cursor: pointer;
+      transition: background-color 0.15s;
+      color: 0.15s;
+    }
+    .button:hover{
+        transform: scale(1.25);
+    }
+  </style>
+</head>
+<body style="background-image: url('/client/occhio_1008749_copy.jpg');background-repeat: no-repeat;background-attachment: fixed;">
+  
+<br><br><br>
+  <form>
+    <label for="location">Location:</label>
+    <select id="location">
+      <option value="Any">Any</option>
+      <option value="Bhubaneswar, India">Bhubaneswar, India</option>
+      <option value="Bangalore, India">Bangalore, India</option>
+      <option value="Delhi, India">Delhi, India</option>
+    </select>
+
+    <label for="bathrooms">Number of Bathrooms:</label>
+    <select id="bathrooms">
+      <option value="Any">Any</option>
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5+">5+</option>
+    </select>
+
+    <label for="bhk">Number of BHK:</label>
+    <select id="bhk">
+      <option value="Any">Any</option>
+      <option value="1 BHK">1 BHK</option>
+      <option value="2 BHK">2 BHK</option>
+      <option value="3 BHK">3 BHK</option>
+      <option value="4 BHK">4 BHK</option>
+      <option value="5 BHK+">5 BHK+</option>
+    </select>
+
+    <label for="area">Area (sq ft):</label>
+    <input type="number" id="area" placeholder="Enter area in square feet">
+
+    <button type="button" id="estimate">Estimate</button>
+  </form>
+
+  <script>
+    document.getElementById("estimate").addEventListener("click", () => {
+      const location = document.getElementById("location").value;
+      const bathrooms = document.getElementById("bathrooms").value;
+      const bhk = document.getElementById("bhk").value;
+      const area = document.getElementById("area").value;
+
+      // Calculate the estimated value here
+
+      alert("The estimated value is $" + estimatedValue);
+    });
+  </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="xyz.css">
+</head>
+
+
+<body>
+    <div class="search-form" style="display: inline-block;" >
+        <div>
+          <label for="location"><b>Location</b></label>
+          <select id="location" name="location">
+            <option value="Any">Any</option>
+            <option value="Bhubaneswar">Bhubaneswar</option>
+            <option value="Cuttack">Cuttack</option>
+            <option value="Puri">Puri</option>
+          </select>
+        </div>
+
+        <div>
+          <label for="bhk_type"><b>BHK</b></label>
+          <select id="bhk_type" name="bhk_type">
+            <option value="Any">Any</option>
+            <option value="Buy_1">1 BHK</option>
+            <option value="Buy_2">2 BHK</option>
+            <option value="Buy_3">3 BHK</option>
+            <option value="Buy_4">4 BHK</option>
+            <option value="Buy_5">5 BHK</option>
+            
+          </select>
+        </div>
+
+        <div>
+          <label for="bathroom_type"><b>Bathrooms</b></label>
+          <select id="bathroom_type" name="bathroom_type">
+            <option value="Any">Any</option>
+            <option value="bath_1">1</option>
+            <option value="bath_2">2</option>
+            <option value="bath_3">3</option>
+            <option value="bath_4">4</option>
+            <option value="bath_5">5</option>
+          </select>
+        </div>
+
+        <div>
+          <label for="area"><b>Area (sq.ft)</b></label>
+          <input type="number" id="area" name="area" placeholder="Any">
+        </div>
+          
+        <br>
+
+        <div class="estimate-button">
+          <input type="text" placeholder="Estimated Price ">
+          <button type="submit">Estimate </button>
+        </div>
+
+      </div>
+</body>
+
+</html>
+   -->
