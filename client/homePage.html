@@ -1,99 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Banglore Home Price Prediction</title>
-	<link rel="stylesheet" href="homePage.css">
-</head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Banglore Home Price Prediction</title>
+    <link rel="stylesheet" href="homePage.css" />
+  </head>
 
+  <body
+    style="
+      font-family: 'Lato', sans-serif;
+      background-image: url('/client/realestate_Wallpaper_copy_2.jpg');
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: cover;
+    "
+  >
+    <div
+      class="header_main"
+      style="
+        color: #c5c9dc;
+        display: flex;
+        flex-direction: row;
+        margin: 0 3em 0 3em;
+        justify-content: space-between;
+        border-bottom: 2px solid white;
+      "
+    >
+      <div class="left_header;">
+        <p style="padding-top: 1em">
+           <img src="Rectangle 67.png" style="margin-top: -2em; width:8em; height: 4em;"/> 
 
-<body style="font-family: 'Lato', sans-serif; background: #1D1D1D;">
-	<div class="header_main " style="color: white; display: flex; flex-direction: row; padding-left: 3em; justify-content: space-between">
-			<div class="left_header; ">
-				<p style="padding-top: 1em;">SS MANSION</p>
-			</div>
+        </p>
+      </div>
 
-			<div class="center_header" style="display: flex; flex-direction: row; padding: 1em ">
-				<div class="home" style="padding-right: 2em; padding-top: .7em;cursor: pointer;">Home</div>
-				<div class="aboutus" style="padding-right: 2em; padding-top: .7em; cursor: pointer;">About Us</div>
-				<div class="contactus" style="padding-right: 2em;padding-top: .7em; cursor: pointer;">Contact Us</div>
-			</div>
-			
-			<div class="right_header" style="margin:1em">
-				<div class="findhome" style="padding-top: .7em;cursor: pointer;">Find Homes</div>
-			</div>
+      <div
+        class="center_header"
+        style="display: flex; flex-direction: row; padding: 1em; font-size: 1.1em;"
+      >
+        <div style="padding-right: 2em; padding-top: 0.7em; cursor: pointer">
+          <a href="homePage.html" class="home"> Home</a>
+        </div>
+        <div style="padding-right: 2em; padding-top: 0.7em; cursor: pointer">
+          <a href="aboutus.html" class="aboutus">About Us</a>
+        </div>
+        <div style="padding-right: 2em; padding-top: 0.7em; cursor: pointer">
+          <a href="contactus.html" class="contactus">Contact US</a>
+        </div>
+      </div>
 
-		</div>
-		
-	</header>
+      <div class="right_header" style="margin: 1em">
+        <div class="findhome" style="padding-top: 0.7em; cursor: pointer; font-size: 1.1em;">
+          <a href="find_homes.html">Find Homes</a>
+        </div>
+      </div>
+    </div>
+    
+    <!-- part 2 -->
 
-	<!-- part 2 -->
-
-	<div class="2"style="width:55%; margin:6em 2.5em;" >
-
-	<h1 style="font-size:3em; color: white">Unlocking Tomorrow's Real Estate Today</h1>
-	<p style="font-size:1.5em; color:#7F7272;font-weight: 400">Your Gateway to Tomorrow's Property Landscape. Harness AI Predictions for Informed Investments and Navigate the Future of Real Estate with Confidence</p>
-	<p style="font-size:1.5em; color:#696969;font-weight: bold">Connect with us soon.</p>
-
+    <div class="2" style="width: 55%; margin: 6em 2.5em">
+      <h1 style="font-size: 3.1em; color: #d3d5df">
+        Unlocking Tomorrow's Real Estate Today
+      </h1>
+      <p style="font-size: 1.1em; color: whitesmoke; font-weight: 400">
+        Your Gateway to Tomorrow's Property Landscape. Harness AI Predictions
+        for Informed Investments and Navigate the Future of Real Estate with
+        Confidence
+      </p>
+      <p style="font-size: 1.2em; color: #cac6c6; font-weight: bold">
+        Connect with us soon.
+      </p>
     </div>
 
-	<!-- part 3 -->
+    <!-- part 3 -->
 
-	<div class="3" style="width:55%; margin-left:2.2em">
+    <div class="3" style="width: 55%; margin-left: 2.2em">
+      <!-- <button style="margin-left: .1em; width: 35%; height: 3.7em; background-color: rgb(154, 54, 204); border-radius: 1em; color:white; border-color: rgb(197, 45, 197);" >Join Us</button> -->
+      <!-- HTML !-->
+      <form action="contactus.html" target="_blank"> 
+        <button class="button-1" role="button">JOIN US</button>
+      </form>
+    </div>
 
-		<div class="top" style="display: flex; flex-direction: row; border-radius: 5px; background-color: #252625; height: 7em">
-			<div class="top-buy" style="cursor: pointer; color: #DDDDDD; width: 33%;">BUY</div>
-			<div class="top-sell" style="cursor: pointer;">SELL</div>
-			<div class="top-rent" style="cursor: pointer;">RENT</div>
-		</div>
+    <!-- part 4 -->
 
-	</div>
-
-
-
-
-
-
-
-
-
-
-	
-	
-	<!-- <div class="sid-mainsion">
-		<button class = "maison_button">SS Maison</button>
-	</div>
-
-	<div class="home-prop">
-		<button class = "home_button">Home</button>
-    	<button class = "aboutus_button">About Us</button>
-    	<button class = "properties_button">Properties</button>		
-	</div>
-
-	<div class="find-home">
-		<button class = "findhome_button">Find Home</button>
-	</div>
-
-	<div class="heading-line">
-		<p>heading</p>
-	</div>
-
-	<div class="table-line">
-		<p>table</p>
-	</div>
-
-	<div class="mini-seven">
-		<p>miniseven</p>
-	</div>
-
-	<div class="mini-eight">
-		<p>minieight</p>
-	</div>
-
-	<div class="mini-nine">
-		<p>mininine</p>
-	</div> -->
-</body>
+    <div
+      class="4"
+      style="
+        background-color: rgb(17, 21, 31);
+        border-color: rgb(83, 72, 122);
+        border-radius: 0.6em;
+        display: flex;
+        text-align: center;
+        margin-top: 3em;
+        margin-left: 2.2em;
+        width: 55%;
+        opacity: 0.85;
+      "
+    >
+      <div style="color: whitesmoke; width: 30%">
+        <h1>9K+</h1>
+        <p>Premium properties</p>
+      </div>
+      <div style="color: whitesmoke; width: 30%">
+        <h1>4K+</h1>
+        <p>Monthly Searches</p>
+      </div>
+      <div style="color: white; width: 30%">
+        <h1>2K+</h1>
+        <p>Owners Advertise Monthly</p>
+      </div>
+    </div>
+  </body>
 </html>
-

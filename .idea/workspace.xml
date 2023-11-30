@@ -5,6 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9921d1a0-1ede-4b4a-847d-205219fcffbe" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/app.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/app.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/app2.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/homePage.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/homePage.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/homePage.html" beforeDir="false" afterPath="$PROJECT_DIR$/client/homePage.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/xyz.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/xyz.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/notebooks/The_RealEstate_Prediction.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/notebooks/The_RealEstate_Prediction.ipynb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/server/app.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/util.py" beforeDir="false" afterPath="$PROJECT_DIR$/server/util.py" afterDir="false" />
     </list>
@@ -29,7 +38,7 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;contact-page&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;Merging master&quot;,
     &quot;last_opened_file_path&quot;: &quot;C:/Users/KIIT/Desktop/gitproject/The_Real_Estate_Predictions_/WiseCasa&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
@@ -124,7 +133,8 @@
       <workItem from="1700807205210" duration="1999000" />
       <workItem from="1700848872230" duration="678000" />
       <workItem from="1701190115468" duration="5851000" />
-      <workItem from="1701323650450" duration="1237000" />
+      <workItem from="1701323650450" duration="2692000" />
+      <workItem from="1701338197277" duration="934000" />
     </task>
     <servers />
   </component>
@@ -132,9 +142,9 @@
     <option name="version" value="3" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/WiseCasa$util.coverage" NAME="util Coverage Results" MODIFIED="1701323974429" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/server" />
+    <SUITE FILE_PATH="coverage/WiseCasa$util.coverage" NAME="util Coverage Results" MODIFIED="1701338245028" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/server" />
     <SUITE FILE_PATH="coverage/WiseCasa$app.coverage" NAME="app Coverage Results" MODIFIED="1701323936379" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/server" />
     <SUITE FILE_PATH="coverage/WiseCasa$server.coverage" NAME="app Coverage Results" MODIFIED="1701198789821" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/server" />
-    <SUITE FILE_PATH="coverage/WiseCasa$app__1_.coverage" NAME="app (1) Coverage Results" MODIFIED="1701324835613" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/server" />
+    <SUITE FILE_PATH="coverage/WiseCasa$app__1_.coverage" NAME="app (1) Coverage Results" MODIFIED="1701338891121" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/server" />
   </component>
 </project>

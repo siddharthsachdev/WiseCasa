@@ -76,174 +76,68 @@
   background-color: #0077b6;
 } */
 
-
 .top-buy:hover,
-    .top-sell:hover,
-    .top-rent:hover {
-        background-color: blue;
-        color: white; 
-    }
-
-.home:hover,
-.aboutus:hover,
-.contactus:hover{
-  text-decoration: underline;
+.top-sell:hover,
+.top-rent:hover {
+  background-color: blue;
+  color: white;
 }
 
+.header_main a:link {
+  text-decoration: none;
+  color: white;
+}
 
+.header_main a:hover,
+.header_main a:visited:hover {
+  color: white;
+}
 
+.header_main a:visited {
+  text-decoration: none;
+  color: white;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* .maison_button{
-  font-weight: bold;
-  border: none;
-  height: 36px;
-  width:105px;
-  border-radius: 2px;
+/* CSS */
+.button-1 {
+  background-color: #d96f98;
+  border-radius: 8px;
+  border-style: none;
+  box-sizing: border-box;
+  color: #ffffff;
   cursor: pointer;
-  margin-left: 80px;
-  margin-right: 220px;
-  margin-top: 30px;
-  background-color: #bde0fe;
-  width:80px;
   display: inline-block;
-} 
-.maison_button:hover{
-  background-color: #0077b6;
+  font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial,
+    sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  height: 40px;
+  line-height: 20px;
+  list-style: none;
+  margin-left: 2em;
+  outline: none;
+  padding: 10px 16px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  transition: color 100ms;
+  vertical-align: baseline;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: 200px;
 }
 
-.home_button{
-  font-weight: bold;
-  border: none;
-  height: 36px;
-  width:105px;
-  border-radius: 2px;
-  cursor: pointer;
-  margin-left: 50px;
-  margin-right: 30px;
-  margin-top: 30px;
-  background-color: #bde0fe;
-} 
-.home_button:hover{
-  background-color: #0077b6
-}
-
-.aboutus_button{
-  font-weight: bold;
-  border: none;
-  height: 36px;
-  width:105px;
-  border-radius: 2px;
-  cursor: pointer;
-  margin-left: 30px;
-  margin-right: 30px;
-  margin-top: 30px;
-  background-color: #bde0fe;
-} 
-.aboutus_button:hover{
-  background-color: #0077b6;
-}
-
-.properties_button{
-  font-weight: bold;
-  border: none;
-  height: 36px;
-  width:105px;
-  border-radius: 2px;
-  cursor: pointer;
-  margin-left: 30px;
-  margin-right: 120px;
-  margin-top: 30px;
-  background-color: #bde0fe;
-}
-.properties_button:hover{
-  background-color: #0077b6;
-} 
-
-.findhome_button{
-  font-weight: bold;
-  height: 36px;
-  width:105px;
-  border-radius: 2px;
-  cursor: pointer;
-  margin-left: 200px;
-  margin-right: 30px;
-  margin-top: 30px;
-  background-color: #bde0fe;
-  width:50px;
-  display: inline-block;
-} 
-.findhome_button:hover{
-  background-color: #0077b6;
+.button-1:hover,
+.button-1:focus {
+  background-color: #db4c83;
 }
 
 
-.home-prop{
-  width:600px;
-  display: inline-block;
+h1{
+  text-shadow: 2px 2px 5px rgb(32, 32, 58);
 }
 
-.find-home{
-  width:350px;
-  display: inline-block;
+p{
+  text-shadow: 2px 2px 5px rgb(73, 73, 99);
 }
-
-.heading-line{
-  width:690px;
-  display: inline-block;
-}
-
-.fifth-div{
-  width:690px;
-  display: inline-block;
-}
-
-.mini-seven{
-  width:230px;
-  display: inline-block;
-}
-
-.mini-eight{
-  width:230px;
-  display: inline-block;
-}
-
-.mini-nine{
-  width:230px;
-  display: inline-block;
-} */
