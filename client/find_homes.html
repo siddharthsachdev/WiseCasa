@@ -6,6 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Property Estimation Form</title>
   <link rel="stylesheet" href="find_homes.css">
+  <!-- <script src="find_homes.js"></script> -->
+
   <style>
     form {
       display: flex;
@@ -52,11 +54,8 @@
 <br><br><br>
   <form>
     <label for="location">Location:</label>
-    <select id="location">
+    <select id="location" >
       <option value="Any">Any</option>
-      <option value="Bhubaneswar, India">Bhubaneswar, India</option>
-      <option value="Bangalore, India">Bangalore, India</option>
-      <option value="Delhi, India">Delhi, India</option>
     </select>
 
     <label for="bathrooms">Number of Bathrooms:</label>
@@ -72,11 +71,11 @@
     <label for="bhk">Number of BHK:</label>
     <select id="bhk">
       <option value="Any">Any</option>
-      <option value="1 BHK">1 BHK</option>
-      <option value="2 BHK">2 BHK</option>
-      <option value="3 BHK">3 BHK</option>
-      <option value="4 BHK">4 BHK</option>
-      <option value="5 BHK+">5 BHK+</option>
+      <option value="1">1 BHK</option>
+      <option value="2">2 BHK</option>
+      <option value="3">3 BHK</option>
+      <option value="4">4 BHK</option>
+      <option value="5">5 BHK+</option>
     </select>
 
     <label for="area">Area (sq ft):</label>
@@ -91,11 +90,132 @@
       const bathrooms = document.getElementById("bathrooms").value;
       const bhk = document.getElementById("bhk").value;
       const area = document.getElementById("area").value;
+      console.log(location,bathrooms,bhk,area);
+      axios.post("http://127.0.0.1:5000/predict_home_price",{
+        "total_sqft": area,
+        "location": location,
+        "bhk": parseInt(bhk),
+        "bath": bathrooms
+      }).then(response=> {
+        var resultElement = document.getElementById('estimate');
+        resultElement.innerHTML = 'Estimated Value: ' + response.data.estimated_price.toString() + " Lakh</h2>";
+      })
 
-      // Calculate the estimated value here
 
-      alert("The estimated value is $" + estimatedValue);
+
     });
+  </script>
+  
+    
+  <!-- Javascript -->
+
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      // Fetch data before rendering the form
+      fetchData()
+        .then(data => {
+          // Populate form with fetched data
+          populateForm(data);
+        })
+        .catch(error => {
+          console.error('Error fetching data:', error);
+        });
+
+      // Function to fetch data using Axios
+      function fetchData() {
+        return axios.get('http://127.0.0.1:5000/get_location_names') // Replace with your API endpoint
+           .then(response => response.data); 
+          //.then(response => console.log(response.data));
+          
+      }
+
+      // Function to populate the form with fetched data
+      function populateForm(data) {
+        console.log(data);
+        document.getElementById('location').value = data.locations;
+
+        const selectElement = document.getElementById('location');
+        
+        // Clear existing options
+        selectElement.innerHTML = '';
+
+        const option = document.createElement('option');
+        option.value = "any" ; // Assuming each item has an 'id' property
+        option.textContent = "any"; // Replace 'name' with the property you want to display
+
+        // Create and append new options based on the fetched data
+        data.locations.forEach(item => {
+          const option = document.createElement('option');
+          console.log(item);
+          option.value = item ; // Assuming each item has an 'id' property
+          option.textContent = item; // Replace 'name' with the property you want to display
+          selectElement.appendChild(option);
+        });
+      
+        // Populate other form fields as needed
+      }
+
+      // Optional: Submit form data to the server
+      document.getElementById('myForm').addEventListener('submit', function (event) {
+        event.preventDefault();
+        const formData = new FormData(event.target);
+        // Use Axios to send form data to the server
+        axios.post('http://127.0.0.1:5000/predict_home_price', formData) // Replace with your API endpoint
+          .then(response => {
+            console.log('Form data submitted successfully:', response.data);
+          })
+          .catch(error => {
+            console.error('Error submitting form data:', error);
+          });
+      });
+    });
+
+
+      // Javascript Bathrooms 
+
+      function getBathValue() {
+        var uiBathrooms = document.getElementsByName("bathrooms");
+        for(var i in bathrooms) {
+          if(bathrooms[i].checked) {
+              return parseInt(i)+1;
+          }
+        }
+        return -1; // Invalid Value
+      }
+      
+      
+      // Javascript BHKs
+
+      function getBHKValue() {
+        var uiBHK = document.getElementsByName("bhk");
+        for(var i in bhk) {
+          if(bhk[i].checked) {
+              return parseInt(i)+1;
+          }
+        }
+        return -1; // Invalid Value
+      }
+
+      
+
+      // ESTIMATED PRICE
+
+      function onClickedEstimatePrice() {
+        console.log("Estimate price button clicked");
+        var sqft = document.getElementById("area");
+        var bhk = getBHKValue();
+        var bathrooms = getBathValue();
+        var location = document.getElementById("locations");
+        var estPrice = document.getElementById("estimate");
+      
+        var url = "http://127.0.0.1:5000/predict_home_price";
+        
+        console.log(location,bhk,bathrooms,area);
+      
+      }
+
+
   </script>
 </body>
 </html>

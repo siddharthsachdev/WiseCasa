@@ -1,9 +1,10 @@
 from flask import Flask, request, jsonify
 from util import get_loc_names, get_estimated_prices, load_saved_artifacts, get_data_columns
+from flask_cors import CORS
 
 load_saved_artifacts()
 app = Flask(__name__)
-
+CORS(app)
 @app.route('/get_location_names', methods=['GET'])
 def get_location_names():
     response = jsonify({
